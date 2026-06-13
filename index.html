@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep | Full Stack Web Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <svg class="logo-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#06b6d4" />
+                            <stop offset="100%" stop-color="#f97316" />
+                        </linearGradient>
+                        <filter id="logo-glow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="3" result="blur" />
+                            <feMerge>
+                                <feMergeNode in="blur" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <polygon points="50,8 88,30 88,70 50,92 12,70 12,30" fill="none" stroke="url(#logo-grad)" stroke-width="5" stroke-linejoin="round" />
+                    <path d="M38,36 C38,30 62,25 62,36 C62,47 38,45 38,56 C38,67 62,64 62,59" fill="none" stroke="url(#logo-grad)" stroke-width="7" stroke-linecap="round" filter="url(#logo-glow)" />
+                </svg>
+                <span class="logo-text">Sandeep</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-socials">
+                <a href="https://github.com/sandeeplodhi199-a11y" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sandeep-lodhi-411b863b4" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:sandeeplodhi543@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="ambient-glow glow-1"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-container container">
+            <div class="hero-content">
+                <p class="hero-subtitle hidden reveal-up">Full Stack Web Developer</p>
+                <h1 class="hero-title hidden reveal-left">I'm Sandeep,<br>and I build <span class="typing-text"></span><span class="cursor">&nbsp;</span></h1>
+                <p class="hero-description hidden reveal-right">Creating responsive, high-performance web applications with clean code and modern design patterns.</p>
+                <div class="hero-btns hidden reveal-up">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="ambient-glow glow-2"></div>
+        <div class="container">
+            <h2 class="section-title hidden reveal-up"><i class="fas fa-user-tie"></i> About Me</h2>
+            <div class="about-content">
+                <div class="about-image hidden reveal-left">
+                    <img src="images/about_profile.png" alt="Sandip">
+                </div>
+                <div class="about-text hidden reveal-right">
+                    <p class="lead-text">I am a passionate Full Stack Web Developer with a knack for building robust and scalable web applications. My journey in tech started with a curiosity for how things work on the internet, which quickly turned into a deep passion for coding.</p>
+                    <p>I enjoy bridging the gap between engineering and design, combining my technical knowledge with a keen eye for aesthetics to create beautiful, functional products. Whether it's crafting a pixel-perfect UI or designing a resilient database architecture.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-user"></i>
+                            <strong>Name</strong>
+                            <span>Sandeep</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-briefcase"></i>
+                            <strong>Role</strong>
+                            <span>Full Stack Developer</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <strong>Location</strong>
+                            <span>Gwalior, India</span>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-box">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years of<br>Experience</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Projects<br>Completed</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Commitment &<br>Dedication</span>
+                        </div>
+                    </div>
+                    <div class="about-action">
+                        <a href="#" class="btn btn-primary resume-btn"><i class="fas fa-download"></i> Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding bg-alt">
+        <div class="ambient-glow glow-3"></div>
+        <div class="container">
+            <h2 class="section-title hidden reveal-up"><i class="fas fa-laptop-code"></i> My Skills</h2>
+            <div class="skills-wrapper">
+                <div class="skills-category hidden reveal-left">
+                    <h3 class="category-title"><i class="fas fa-layer-group"></i> Frontend Stack</h3>
+                    <div class="skills-subgrid">
+                        <div class="skill-card" data-tech="html">
+                            <div class="skill-icon-wrapper"><i class="fab fa-html5"></i></div>
+                            <h4>HTML5</h4>
+                        </div>
+                        <div class="skill-card" data-tech="css">
+                            <div class="skill-icon-wrapper"><i class="fab fa-css3-alt"></i></div>
+                            <h4>CSS3</h4>
+                        </div>
+                        <div class="skill-card" data-tech="js">
+                            <div class="skill-icon-wrapper"><i class="fab fa-js"></i></div>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="skill-card" data-tech="react">
+                            <div class="skill-icon-wrapper"><i class="fab fa-react"></i></div>
+                            <h4>React</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category hidden reveal-right">
+                    <h3 class="category-title"><i class="fas fa-server"></i> Backend & Database</h3>
+                    <div class="skills-subgrid">
+                        <div class="skill-card" data-tech="node">
+                            <div class="skill-icon-wrapper"><i class="fab fa-node-js"></i></div>
+                            <h4>Node.js</h4>
+                        </div>
+                        <div class="skill-card" data-tech="python">
+                            <div class="skill-icon-wrapper"><i class="fab fa-python"></i></div>
+                            <h4>Python</h4>
+                        </div>
+                        <div class="skill-card" data-tech="sql">
+                            <div class="skill-icon-wrapper"><i class="fas fa-database"></i></div>
+                            <h4>SQL</h4>
+                        </div>
+                        <div class="skill-card" data-tech="mongo">
+                            <div class="skill-icon-wrapper"><i class="fas fa-leaf"></i></div>
+                            <h4>MongoDB</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="ambient-glow glow-1"></div>
+        <div class="container">
+            <h2 class="section-title hidden reveal-up"><i class="fas fa-project-diagram"></i> Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card hidden reveal-up">
+                    <div class="project-img">
+                        <img src="images/project_student.png" alt="Student Management System">
+                        <div class="project-links">
+                            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" target="_blank" title="Source Code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Student Management System</h3>
+                        <p>A comprehensive web application to manage student profiles, academic records, attendance tracking, and grading systems.</p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card hidden reveal-up">
+                    <div class="project-img">
+                        <img src="images/project_portfolio.png" alt="Personal Portfolio Website">
+                        <div class="project-links">
+                            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" target="_blank" title="Source Code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>A highly responsive, animated, and modern portfolio site featuring dynamic scrolling animations, interactive styling, and form handling.</p>
+                        <div class="tech-stack">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card hidden reveal-up">
+                    <div class="project-img">
+                        <img src="images/project_library.png" alt="Library Management System">
+                        <div class="project-links">
+                            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" target="_blank" title="Source Code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Library Management System</h3>
+                        <p>An efficient database-driven management tool for cataloging books, managing member accounts, tracking borrowings, and fine calculations.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>MongoDB</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience" class="timeline-section section-padding bg-alt">
+        <div class="container">
+            <h2 class="section-title hidden reveal-up"><i class="fas fa-user-graduate"></i> Experience & Education</h2>
+            <div class="timeline">
+                <div class="timeline-item hidden reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <i class="fas fa-briefcase timeline-icon"></i>
+                            <div class="timeline-title-group">
+                                <h3>Web Developer</h3>
+                                <h4>Tech Solutions Inc.</h4>
+                            </div>
+                        </div>
+                        <span class="date">2021 - Present</span>
+                        <p>Leading the front-end development team, architecting scalable web applications, and mentoring junior developers.</p>
+                    </div>
+                </div>
+                <div class="timeline-item hidden reveal-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <i class="fas fa-laptop-code timeline-icon"></i>
+                            <div class="timeline-title-group">
+                                <h3>Full Stack Developer</h3>
+                                <h4>Digital Innovations</h4>
+                            </div>
+                        </div>
+                        <span class="date">2018 - 2021</span>
+                        <p>Developed and maintained numerous client websites, handled database migrations, and implemented RESTful APIs.</p>
+                    </div>
+                </div>
+                <div class="timeline-item hidden reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <i class="fas fa-graduation-cap timeline-icon"></i>
+                            <div class="timeline-title-group">
+                                <h3>Bachelor of Computer Science</h3>
+                                <h4>Gwalior University</h4>
+                            </div>
+                        </div>
+                        <span class="date">2015 - 2018</span>
+                        <p>Studied programming, databases, web technologies, and software engineering fundamentals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2 class="section-title hidden reveal-up"><i class="fas fa-paper-plane"></i> Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info hidden reveal-left">
+                    <h3>Let's talk about everything!</h3>
+                    <p>Feel free to reach out for collaborations, opportunities, or just to say hi!</p>
+                    <div class="info-item">
+                        <i class="fab fa-github"></i>
+                        <span><a href="https://github.com/sandeeplodhi199-a11y" target="_blank" style="text-decoration: underline;">sandeeplodhi199-a11y</a></span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span><a href="https://www.linkedin.com/in/sandeep-lodhi-411b863b4" target="_blank" style="text-decoration: underline;">sandeep-lodhi-411b863b4</a></span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span><a href="mailto:sandeeplodhi543@gmail.com" style="text-decoration: underline;">sandeeplodhi543@gmail.com</a></span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 87180 73543</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Gwalior, India</span>
+                    </div>
+                </div>
+                <form class="contact-form hidden reveal-right" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder="Your Name">
+                        <span class="error-msg" id="nameError">Name is required</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder="Your Email">
+                        <span class="error-msg" id="emailError">Please enter a valid email</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" required placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
+                        <span class="error-msg" id="messageError">Message is required</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                    <p class="success-msg" id="successMsg">Message sent successfully!</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <svg class="logo-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="logo-grad-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#06b6d4" />
+                                    <stop offset="100%" stop-color="#f97316" />
+                                </linearGradient>
+                                <filter id="logo-glow-footer" x="-20%" y="-20%" width="140%" height="140%">
+                                    <feGaussianBlur stdDeviation="3" result="blur" />
+                                    <feMerge>
+                                        <feMergeNode in="blur" />
+                                        <feMergeNode in="SourceGraphic" />
+                                    </feMerge>
+                                </filter>
+                            </defs>
+                            <polygon points="50,8 88,30 88,70 50,92 12,70 12,30" fill="none" stroke="url(#logo-grad-footer)" stroke-width="5" stroke-linejoin="round" />
+                            <path d="M38,36 C38,30 62,25 62,36 C62,47 38,45 38,56 C38,67 62,64 62,59" fill="none" stroke="url(#logo-grad-footer)" stroke-width="7" stroke-linecap="round" filter="url(#logo-glow-footer)" />
+                        </svg>
+                        <span class="logo-text">Sandeep</span>
+                    </a>
+                    <p class="footer-tagline">Crafting scalable web solutions and interactive digital experiences with code and creativity.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social-box">
+                    <h3>Connect</h3>
+                    <p>Let's collaborate on your next project.</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/sandeeplodhi199-a11y" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sandeep-lodhi-411b863b4" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:sandeeplodhi543@gmail.com" target="_blank" title="Gmail"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sandeep. All rights reserved.</p>
+                <p class="footer-credits">Designed & Built with <i class="fas fa-heart pulse"></i> by Sandeep</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
